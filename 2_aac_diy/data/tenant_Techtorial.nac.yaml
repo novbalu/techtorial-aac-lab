@@ -1,0 +1,43 @@
+---
+apic:
+  tenants:
+    - name: Techtorial
+
+      description: "AaC demo tenant by balnovak"
+
+      vrfs:
+        - name: VRF1
+        - name: VRF2
+
+      bridge_domains:
+        # App-centric BDs
+        - name: VLAN101
+          vrf: VRF1
+          subnets:
+            - ip: 10.1.0.1/24
+        - name: VLAN102
+          vrf: VRF1
+          subnets:
+            - ip: 10.1.1.1/24
+        - name: VLAN103
+          vrf: VRF1
+          subnets:
+            - ip: 10.1.2.1/23
+        - name: VLAN104
+          vrf: VRF1
+          subnets:
+            - ip: 10.1.4.1/23
+
+      application_profiles:
+        - name: DEV
+          endpoint_groups:
+            # App centric EPGs
+            - name: VLAN101
+              bridge_domain: VLAN101
+            - name: VLAN102
+              bridge_domain: VLAN102
+            - name: VLAN103
+              bridge_domain: VLAN103
+            - name: VLAN104
+              bridge_domain: VLAN104
+
