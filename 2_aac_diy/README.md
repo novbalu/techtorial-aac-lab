@@ -27,7 +27,7 @@ Navigate to the 2_aac_diy directory:
 
 This folder contains a demo ACI as Code inventory (in the data dir), a main.tf file to run with Terraform and sevaral other important AaC related files (schema, rules, tests).
 
-Open up the folder in your favorite IDE (e.g. Visual Studio, PyCharm...). Take some time and examine the code structure. All changes described in the next section will be made on the local copy of this repository.
+Open up the folder in your favorite IDE (e.g. Visual Studio, PyCharm...). Take some time and examine the code structure. All changes described in the next sections will be made on the local copy of this repository.
 
 ## Customize Terraform backend
 
