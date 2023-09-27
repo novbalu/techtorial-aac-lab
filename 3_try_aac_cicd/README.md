@@ -1,4 +1,4 @@
-## Try an ACI as Code CICD Pipeline
+## Trying out an ACI as Code CICD Pipeline
 
 
 ## Goal
