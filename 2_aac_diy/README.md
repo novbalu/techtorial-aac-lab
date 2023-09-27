@@ -29,6 +29,19 @@ This folder contains a demo ACI as Code inventory (in the data dir), a main.tf f
 
 Open up the folder in your favorite IDE (e.g. Visual Studio, PyCharm...). Take some time and examine the code structure. All changes described in the next sections will be made on the local copy of this repository.
 
+## Change the tenant name
+
+Since there are multiple people working on the same sandbox APIC it's necessary to separate the config scope.
+In the yaml file `2_aac_diy/data/tenant_Techtorial.nac.yaml` change the tenant name to something unique, like your name.
+
+```yaml
+---
+apic:
+  tenants:
+    - name: Techtorial-lab-BALNOVAK
+...
+```
+
 ## Customize Terraform backend
 
 The `terraform-aac` repository we are using is pre-configured to use Terraform Cloud to store the statefile. As we will be using a local statefile in this lab, must the `main.tf` file edited and have the following `cloud` block section removed to to revert to local state storage.
