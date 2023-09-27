@@ -30,6 +30,9 @@ You'll need to [download](
 https://developer.hashicorp.com/terraform/downloads) and install Terraform. 
 Terraform runs as a single binary named `terraform`.
 
+For your reference, you can find the ACI Terraform provider here in the Terraform registry:
+https://registry.terraform.io/providers/CiscoDevNet/aci/latest
+
 ### 4. Your IDE of choice
 You're free to use whichever code editor you prefer.
 
