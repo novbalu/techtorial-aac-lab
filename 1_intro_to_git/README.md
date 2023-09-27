@@ -67,6 +67,8 @@ upstream	https://github.com/balnovak/techtorial-aac-lab.git (fetch)
 upstream	https://github.com/balnovak/techtorial-aac-lab.git (push)
 ```
 
+Note: Depending on your Git configuration, you may not see upstream.
+
 This essentially tells that your local repository is known to Git as 'origin' and the remote repository linked to it can be found at the shown URL. This will become more clear when pushing changes to the remote repository later on in this guide.
 
 ## Changing the code
