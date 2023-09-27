@@ -292,6 +292,6 @@ Select a resource from the state file and remove it in the APIC GUI, then run `t
 
 ## Lab Summary
 
-If you have followed the steps outline in this lab guide have you successfully used Terraform AAC to modify the configuratons of your ACI simulator.
+If you have followed the steps outline in this lab guide have you successfully used Terraform AAC to modify the configuratons of the sandbox ACI simulator.
 
 In the next lab will we integrate these steps into a CI/CD pipeline in order to eliminate manual tasks.
