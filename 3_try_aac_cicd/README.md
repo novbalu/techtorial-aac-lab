@@ -163,6 +163,9 @@ apic:
               bridge_domain: VLAN1337
 ```
 
+For your reference, when editing the yaml files, you can see the data model documentation here:
+https://developer.cisco.com/docs/nexus-as-code/#!data-model-aci/aci
+
 Let's save and confirm our changes.
 
 ```shell
