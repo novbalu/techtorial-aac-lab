@@ -1,4 +1,4 @@
-## Trying out an ACI as Code CICD Pipeline
+# Trying out an ACI as Code CICD Pipeline
 
 
 ## Goal
@@ -232,30 +232,30 @@ branch 'dev_add_vlan_1337' set up to track 'origin/dev_add_vlan_1337'.
 We have successfully pushed the commit to origin (GitHub) onto our dev branch.
 There is a GitHub actions workflow triggered automatically that validates our change. To see this workflow click on `Actions`.
 
-![Alt text](images/actions-1.png)
+![GitHub Actions](images/actions-1.png)
 
 You can also click on the workflow and see the run details (terminal output).
 
 Once the job finishes you will see a Webex notification with the results.
 
-![Alt text](images/webex-1.png)
+![Webex notification about a successfull run](images/webex-1.png)
 
 The validation should be successful. If it's not, you'll see the reason of failure as well. In this case you should fix whatever is wrong and push a new commit with the fix to the same dev branch.
 
 An example of such a failure has been presented on the Techtorial demo:
 
-![Alt text](images/webex-2.png)
+![Webex notification about a failed run](images/webex-2.png)
 
 
 ## Create a Pull Request
 
 Once the validation passed, you can decide that the change is ready to be merged with the main branch. Open a PR. A new workflow is triggered: Plan.
 
-![Alt text](images/pr-1.png)
+![Create Pull Request](images/pr-1.png)
 
 The run's result is added to the PR as a comment. Once the plan runs successfully, ask for a review.
 
-![Alt text](images/pr-2.png)
+![Open Pull Request](images/pr-2.png)
 
 
 ## Merge Pull Request
@@ -265,13 +265,13 @@ Once the code owner reviewed the changed and merged it, the PR can be merged.
 A new workflow is triggered: `Deploy`.
 You'll also get a Webex notification about the results.
 
-![Alt text](images/webex-3.png)
+![Webex notification about successful deploy](images/webex-3.png)
 
 The link with the test results only refreshes once the `pages build and deployment` workflow finishes. (This is the GitHub Pages integration.)
 
 You can decide to delete the dev branch.
 
-![Alt text](images/pr-3.png)
+![Delete branch](images/pr-3.png)
 
 
 ## Verify results
